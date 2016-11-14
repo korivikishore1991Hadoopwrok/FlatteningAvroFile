@@ -1,0 +1,109 @@
+shoprecord    
+  
+ shopid (string)   
+ 
+  
+ rqsystimestamp (string)   
+ 
+  
+ rqtimestamp (string)   
+ 
+  
+ rssystimestamp (string)   
+ 
+  
+ rstimestamp (string)   
+ 
+  
+ request (struct<transactionid:string,agentsine:string,cabinpref:array<struct<cabin:string,preflevel:string>>,countrycode:string,frequentflyerstatus:string,frequentflyercarrier:string,frequentflyer:array<struct<status:string,carrier:string>>,invokedservice:string,maxconnections:string,origdest:array<struct<rph:string,origairportcode:string,destairportcode:string,departuredatetime:string,departurewindow:string,arrivaldatetime:string,arrivalwindow:string,segmenttype:string,alttime:string,altdate:string,altlocorig:string,altlocdest:string,prefconncities:array<string>,designrouting:array<string>,vendorpref:array<struct<code:string,vendorpreflevel:string>>>>,passenger:array<struct<paxcode:string,paxquantity:int>>,passengerstatus:string,posbookingchannel:string,posbookingchanneltype:string,pospcc:string,poscitycode:string,posbookingchannelcohost:string,defaultcurrencycode:string,pricecurrencycode:string,requestorid:string,requestortype:string,requesttimestamp:string,requesttimestampwindow:string,requesttype:string,sabreathconversationid:string,target:string,triptype:string,validinterlineticket:string,vendorpref:array<struct<code:string,vendorpreflevel:string>>,publicfare:string,privatefare:string,corporatefare:string,longconnecttime:int,sumoflocals:string,cabinjumpsdisabled:string,version:string,systemtimestamp:string,hostedairline:string,nonstopsonly:string,faretypeexclusion:struct<retainfare:string,minmaxstay:string,refundpenalty:string,resticketing:string>,farespecification:struct<countrycode:string,statecode:string,citycode:string,type:string>,negotiatedfarecode:array<string>,acountcode:array<string>>)    transactionid (string)   
+ agentsine (string)   
+ cabinpref (array)   
+ ,countrycode (string)   
+ frequentflyerstatus (string)   
+ frequentflyercarrier (string)   
+ frequentflyer (array)   
+ ,invokedservice (string)   
+ maxconnections (string)   
+ origdest (array)   
+ ,passenger (array)   
+ ,passengerstatus (string)   
+ posbookingchannel (string)   
+ posbookingchanneltype (string)   
+ pospcc (string)   
+ poscitycode (string)   
+ posbookingchannelcohost (string)   
+ defaultcurrencycode (string)   
+ pricecurrencycode (string)   
+ requestorid (string)   
+ requestortype (string)   
+ requesttimestamp (string)   
+ requesttimestampwindow (string)   
+ requesttype (string)   
+ sabreathconversationid (string)   
+ target (string)   
+ triptype (string)   
+ validinterlineticket (string)   
+ vendorpref (array)   
+ ,publicfare (string)   
+ privatefare (string)   
+ corporatefare (string)   
+ longconnecttime (int)   
+ sumoflocals (string)   
+ cabinjumpsdisabled (string)   
+ version (string)   
+ systemtimestamp (string)   
+ hostedairline (string)   
+ nonstopsonly (string)   
+ faretypeexclusion (struct)    retainfare (string)   
+ minmaxstay (string)   
+ refundpenalty (string)   
+ resticketing (string)   
+  
+ ,farespecification (struct)    countrycode (string)   
+ statecode (string)   
+ citycode (string)   
+ type (string)   
+  
+ ,negotiatedfarecode (array)   
+ ,acountcode (array)   
+  
+ 
+  
+ responseitineraries (array<struct<itineraryseqnbr:int,advancepurchasedate:string,directionind:string,eticketind:string,pricingsubsource:string,privatefare1:array<string>,cache:array<struct<id:int,partition:string,ttl:int>>,farebreakdown:array<struct<paxcode:string,paxquantity:int,farebasiscode:string,farebasiscodes:array<string>,basefareamount:double,basefarecurrencycode:string,basefaredecimalplaces:int,taxamount:double,taxcurrencycode:string,taxdecimalplaces:int,taxes:array<struct<taxcode:string,amount:double,currencycode:string,decimalplaces:int>>,feeamount:double,feecurrencycode:string,feedecimalplaces:int,obfeeamount:double,obfeecurrencycode:string,obfeedecimalplaces:int,farecalcline:string,privatefare2:string,privatefare3:array<string>>>,flights:array<struct<rph:string,cabin:string,seatsremaining:int,arrivalairportcode:string,arrivaldatetime:string,departureairportcode:string,departuredatetime:string,elapsedtimemin:int,equipmenttype:string,intermediatepointlist:string,marketingairlinecode:string,marketingfltnbr:string,operatingairlinecode:string,operatingfltnbr:string,resbookdesigcode:string,stopquantity:int,marriagegrp:string>>,lastticketdate:string,pricingsource:string,responsetimestamp:string,responsetimestampwindow:string,systemtimestamp:string,seatsremaining:int,totalbasefare:array<struct<amount:double,currencycode:string,decimalplaces:int>>,totalequifare:array<struct<amount:double,currencycode:string,decimalplaces:int>>,totalextras:double,totalfare:array<struct<amount:double,currencycode:string,decimalplaces:int>>,totalfee:array<struct<amount:double,currencycode:string,decimalplaces:int>>,totalmileage:double,totalobfee:array<struct<amount:double,currencycode:string,decimalplaces:int>>,totalpax:int,totaltax:array<struct<amount:double,currencycode:string,decimalplaces:int>>,itinerarytype:string>>)    item (struct)    itineraryseqnbr (int)   
+ advancepurchasedate (string)   
+ directionind (string)   
+ eticketind (string)   
+ pricingsubsource (string)   
+ privatefare1 (array)   
+ ,cache (array)   
+ ,farebreakdown (array)   
+ ,flights (array)   
+ ,lastticketdate (string)   
+ pricingsource (string)   
+ responsetimestamp (string)   
+ responsetimestampwindow (string)   
+ systemtimestamp (string)   
+ seatsremaining (int)   
+ totalbasefare (array)   
+ ,totalequifare (array)   
+ ,totalextras (double)   
+ totalfare (array)   
+ ,totalfee (array)   
+ ,totalmileage (double)   
+ totalobfee (array)   
+ ,totalpax (int)   
+ totaltax (array)   
+ ,itinerarytype (string)    
+
+  
+  
+  
+ 
+  
+ year (string)   
+ 
+  
+ month (string)   
+ 
+  
+ day (string)

@@ -1,0 +1,10 @@
+roboticshopping    
+  shopid (string)   
+ 
+  roboticshopindicator (string)   
+ 
+  year (int)   
+ 
+  month (int)   
+ 
+  day (int) 

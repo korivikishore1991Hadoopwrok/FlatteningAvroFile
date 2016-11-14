@@ -1,0 +1,158 @@
+shoprecord    
+  shopid (string)   
+ 
+  rqsystimestamp (string)   
+ 
+  rqtimestamp (string)   
+ 
+  rssystimestamp (string)   
+ 
+  rstimestamp (string)   
+ 
+  request (struct){
+ transactionid (string)   
+ agentsine (string)   
+ cabinpref (array)[    item (struct){ cabin (string) preflevel (string)} ]  
+ ,countrycode (string)   
+ frequentflyerstatus (string)   
+ frequentflyercarrier (string)   
+ frequentflyer (array)[    item (struct){    status (string)  carrier (string)   } ]
+ ,invokedservice (string)   
+ maxconnections (string)   
+ origdest (array)[    item (struct) {   rph (string)   
+                                        origairportcode (string)   
+                                        destairportcode (string)   
+                                        departuredatetime (string)   
+                                        departurewindow (string)   
+                                        arrivaldatetime (string)   
+                                        arrivalwindow (string)   
+                                        segmenttype (string)   
+                                        alttime (string)   
+                                        altdate (string)   
+                                        altlocorig (string)   
+                                        altlocdest (string)   
+                                        prefconncities (array)  [  item (string)  ] 
+                                        ,designrouting (array)   [ item (string) ]  
+										,vendorpref (array) [   item (struct) {   code (string)   vendorpreflevel (string) } ] 
+										}]
+ ,passenger (array) [   item (struct) {   paxcode (string)  paxquantity (int)   }     ]
+ ,passengerstatus (string)   
+ posbookingchannel (string)   
+ posbookingchanneltype (string)   
+ pospcc (string)   
+ poscitycode (string)   
+ posbookingchannelcohost (string)   
+ defaultcurrencycode (string)   
+ pricecurrencycode (string)   
+ requestorid (string)   
+ requestortype (string)   
+ requesttimestamp (string)   
+ requesttimestampwindow (string)   
+ requesttype (string)   
+ sabreathconversationid (string)   
+ target (string)   
+ triptype (string)   
+ validinterlineticket (string)   
+ vendorpref (array) [   item (struct)  {  code (string)   vendorpreflevel (string)   }    ]
+ ,publicfare (string)   
+ privatefare (string)   
+ corporatefare (string)   
+ longconnecttime (int)   
+ sumoflocals (string)   
+ cabinjumpsdisabled (string)   
+ version (string)   
+ systemtimestamp (string)   
+ hostedairline (string)   
+ nonstopsonly (string)   
+ faretypeexclusion (struct) {   retainfare (string) minmaxstay (string)  refundpenalty (string)  resticketing (string)   }
+ ,farespecification (struct){   countrycode (string) statecode (string)  citycode (string) type (string) } 
+ ,negotiatedfarecode (array)[    item (string)   ]
+ ,acountcode (array)    item (string)  }
+ 
+  responseitineraries (array)   item (struct) {   
+ itineraryseqnbr (int)   
+ advancepurchasedate (string)   
+ directionind (string)   
+ eticketind (string)   
+ pricingsubsource (string)   
+ itinerarysource (string)   
+ privatefare1 (array)[    item (string)    ]
+ ,cache (array)[    item (struct)  {  id (int)   partition (string)   ttl (int)  } ]
+ ,farebreakdown (array)[    item (struct) {   paxcode (string)   
+                                              paxquantity (int)   
+                                              farebasiscode (string)   
+                                              farebasiscodes (array)  [  item (string) ]  
+                                              ,basefareamount (double)   
+                                              basefarecurrencycode (string)   
+                                              basefaredecimalplaces (int)   
+                                              taxamount (double)   
+                                              taxcurrencycode (string)   
+                                              taxdecimalplaces (int)   
+                                              taxes (array) [item (struct){    taxcode (string)   amount (double) currencycode (string) decimalplaces (int) }]  
+                                              ,feeamount (double)   
+                                              feecurrencycode (string)   
+                                              feedecimalplaces (int)   
+                                              obfeeamount (double)   
+                                              obfeecurrencycode (string)   
+                                              obfeedecimalplaces (int)   
+                                              farecalcline (string)   
+                                              privatefare2 (string)   
+                                              privatefare3 (array) [   item (string)   ]}]
+  
+  
+  
+ ,flights (array)[    item (struct) {   rph (string)   
+                                        cabin (string)   
+                                        seatsremaining (int)   
+                                        arrivalairportcode (string)   
+                                        arrivaldatetime (string)   
+                                        departureairportcode (string)   
+                                        departuredatetime (string)   
+                                        elapsedtimemin (int)   
+                                        equipmenttype (string)   
+                                        intermediatepointlist (string)   
+                                        marketingairlinecode (string)   
+                                        marketingfltnbr (string)   
+                                        operatingairlinecode (string)   
+                                        operatingfltnbr (string)   
+                                        resbookdesigcode (string)   
+                                        stopquantity (int)   
+                                        marriagegrp (string)  }] 
+ ,lastticketdate (string)   
+ pricingsource (string)   
+ responsetimestamp (string)   
+ responsetimestampwindow (string)   
+ systemtimestamp (string)   
+ seatsremaining (int)   
+ totalbasefare (array) [   item (struct) { amount (double)   
+                                           currencycode (string)   
+                                           decimalplaces (int) }  ]  
+ ,totalequifare (array) [   item (struct) { amount (double)   
+                                            currencycode (string)   
+                                            decimalplaces (int)   }   ]
+ ,totalextras (double)    
+ totalfare (array)  [  item (struct) {   amount (double)   
+                                         currencycode (string)   
+                                         decimalplaces (int)  } ] 
+  
+  
+ ,totalfee (array)  [  item (struct)  {  amount (double)   
+                                         currencycode (string)   
+                                         decimalplaces (int)  } ]
+ ,totalmileage (double)    
+ totalobfee (array) [   item (struct) {   amount (double)   
+                                          currencycode (string)   
+                                          decimalplaces (int)   }  ]
+ ,totalpax (int)   
+ totaltax (array)   [ item (struct) {   amount (double)   
+                                        currencycode (string)   
+                                        decimalplaces (int)   }  ]
+ ,itinerarytype (string)   
+ } 
+  
+ 
+  year (string)   
+ 
+  month (string)   
+ 
+  day (string) 

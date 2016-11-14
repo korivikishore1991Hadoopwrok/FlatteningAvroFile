@@ -1,0 +1,6 @@
+shoprecord    
+ ? 
+ shopid (string)   
+ 
+ ? 
+ RoboticShopindicator (string)
